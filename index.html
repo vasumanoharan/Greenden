@@ -15,7 +15,7 @@
         <h1 class="text-4xl">Greenden</h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+            class="w-6 h-6 md:hidden cursor-pointer" onclick="nav()">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -25,6 +25,16 @@
             <li><a href="./contact.html" class="text-gray-700 hover:underline hover:text-black">Contacts</a></li>
         </ul>
     </nav>
+    <div id="sidenav" class="bg-green-100 fixed right-0 top-0 z-20 transition-all duration-1000"style='width: 50%;height:100vh;right:-70%'>
+        <ul class="flex flex-col  gap-10 items-center">
+            <div class="text-right p-5 ml-24" id="cls()">
+                <p class="inline cursor-pointer" onclick="cls()">X</p>
+            </div>
+            <li><a href="" class="text-gray-700 hover:underline hover:text-black">Home</a></li>
+            <li><a href="./products.html" class="text-gray-700 hover:underline hover:text-black">Products</a></li>
+            <li><a href="./contact.html" class="text-gray-700 hover:underline hover:text-black">Contacts</a></li>
+        </ul>
+    </div>
     <!-- <h1>Welcome to Greenden</h1> -->
     <!-- Heading -->
     <div class="bg-green-100 p-4 flex justify-around items-center">
@@ -157,6 +167,9 @@
         </div>
 
     </div>
+    <script src="./script.js">
+        
+    </script>
 </body>
 
 </html>
